@@ -4,7 +4,7 @@
 [ext_resource path="res://actor/Hunter.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 55, 63 )
+extents = Vector2( 34, 33 )
 
 [sub_resource type="AtlasTexture" id=2]
 flags = 4
@@ -40,7 +40,6 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
-dialogue_file_path = "res://actor/data_dialog/Hunter.json"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
@@ -56,19 +55,24 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="Control"]
-margin_right = 128.0
-margin_bottom = 61.0
+margin_right = 144.0
+margin_bottom = 70.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 1.07874
+anchor_bottom = 1.32557
 margin_left = 5.0
 margin_top = 5.0
+margin_bottom = -15.86
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
+bbcode_text = "haloo
+"
+text = "haloo
+"
 __meta__ = {
 "_edit_use_anchors_": true
 }
@@ -76,3 +80,13 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 6 )
 animation = "idle"
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_right = 135.0
+margin_bottom = 73.0
+text = "LOI Me Roi
+NGU VLOL"
+__meta__ = {
+"_edit_use_anchors_": false
+}
